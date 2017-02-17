@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>ex1</title>
+	<head>
+
+	<script>
+		function trocaValor(){
+			var x=document.getElementById("c1").value;
+			c1.value=document.getElementById("c2").value;
+			c2.value=x;
+		}
+	</script>
+
+	<body>
+		<form>
+
+			<label id="lblCampo1"> Campo 1 </label>
+			<input type="text" name="c1" id="c1">
+			
+			<label id="lblCampo2"> Campo 2 </label>
+			<input type="text" name="c2" id="c2">
+
+			<input type="button" onclick="trocaValor()" value="Trocar Valor"/>
+
+		</form>
+	</body>
+
+</html>
