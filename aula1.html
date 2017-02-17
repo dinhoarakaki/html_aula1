@@ -3,6 +3,19 @@
 		<title>Cadastro de Usuário</title>
 	</head>
 	
+	<script>
+		function exibirSenha(){
+			var elSenha=document.getElementById("txtSenha");
+			if (elSenha.type=="text"){
+				elSenha.type="password";
+				verSenha.value="Ver Senha";
+			}else{
+				elSenha.type="text";
+				verSenha.value="Esconder Senha";
+			}
+		}
+	</script>
+	
 	<body>
 		<form>
 			<label id="lblUsername"> Nome </label>
@@ -11,6 +24,7 @@
 			<label id="lblPassword"> Senha </label>
 			<input type="password" name="txtSenha" id="txtSenha">
 			<input type="submit" value="salvar"/>
+			<input type="button" onclick="exibirSenha()" value="Ver Senha" id="verSenha"/>
 		</form>
 	</body>
 
